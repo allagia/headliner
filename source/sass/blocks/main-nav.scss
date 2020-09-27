@@ -1,0 +1,243 @@
+.main-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mobile {
+    align-items: flex-start;
+  }
+
+  &__logo {
+    @include mobile {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__burger,
+  &__close-btn {
+    display: none;
+  }
+
+  &__burger {
+    @include button-reset;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__close-btn {
+    @include button-reset;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/icon-cross.svg");
+    background-color: $yellow;
+    background-repeat: no-repeat;
+    background-size: 11px 11px;
+    background-position: center;
+  }
+
+  &__wrapper {
+    @include mobile {
+      position: absolute;
+      top: 40px;
+      left: 0;
+
+      width: 100vw;
+      // height: 100vh;
+      margin: 0 -24px;
+      padding: 25px 24px;
+
+      overflow: auto;
+      z-index: 2;
+      background-color: $dark-violet;
+    }
+  }
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include mobile {
+      margin-bottom: 4px;
+      margin-right: auto;
+
+      &:last-child {
+        margin-bottom: 0;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 32px 0;
+
+    &:hover {
+      box-shadow: inset 0 -2px 0 $yellow;
+    }
+
+    @include mobile {
+      padding: 6px 0;
+    }
+  }
+
+}
+
+//   &__link {
+//     font-weight: 300;
+//     line-height: 32px;
+
+//     color: rgba(255, 255, 255, 0.7);
+//   }
+// }
+
+// @include tablet {
+//   .main-nav {
+//     display: flex;
+//     align-items: flex-end;
+//     justify-content: space-between;
+
+//     &__wrapper {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+
+//       display: flex;
+//       width: 100vw;
+//       height: 100vh;
+//       margin: 0 -20px;
+//       flex-direction: column;
+
+//       overflow: auto;
+//       z-index: 2;
+//       background-color: #ffffff;
+//     }
+
+
+//     &__burger {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       justify-content: center;
+//       width: 50px;
+//       height: 50px;
+//       margin: 0 -20px 0 0;
+
+//       background-color: $tiffany;
+//       border: none;
+//       outline: none;
+//       cursor: pointer;
+//       transition: all 200ms ease;
+
+//       &:hover {
+//         opacity: 0.7;
+//       }
+
+//       & span {
+//         width: 22px;
+//         height: 2px;
+//         margin: 2px 0;
+
+//         background: #000000;
+//       }
+//     }
+
+//     &__logo {
+//       display: block;
+//       margin: 0;
+//       height: 25px;
+//     }
+
+//     &__close-button {
+//       position: absolute;
+//       top: 15px;
+//       right: 13px;
+
+//       width: 23px;
+//       height: 23px;
+
+//       background-image: url("../img/icon-cross.svg");
+//       border: none;
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       outline: none;
+//       background-color: transparent;
+
+//       transition: all 200ms ease;
+//       z-index: 1;
+//       cursor: pointer;
+
+//       &:hover {
+//         opacity: 0.7;
+//       }
+//     }
+
+//     &__list {
+//       display: block;
+//       width: 100%;
+//       padding: 100px 0 0 0;
+//     }
+
+//     &__item {
+
+//       width: 100%;
+//       margin: 0 0 30px 0;
+//       padding: 17px 13px 15px 20px;
+
+//       background-color: #f6f6f6;
+//     }
+
+//     &__link {
+//       position: relative;
+//       display: block;
+//       width: 100%;
+//       font-size: 20px;
+//       line-height: 28px;
+//       letter-spacing: 0.3px;
+//       color: #48494d;
+
+//       &::after {
+//         position: absolute;
+//         content: "";
+//         top: 6px;
+//         right: 3px;
+
+//         width: 12px;
+//         height: 12px;
+
+//         background-image: url("../img/icon-arrow.svg");
+//         background-repeat: no-repeat;
+//       }
+//     }
+//   }
+// }
+
+// @include mobile {
+//   .main-nav {
+//     &__burger {
+//       margin: 0 -15px 0 0;
+//     }
+//   }
+// }

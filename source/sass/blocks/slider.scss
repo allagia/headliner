@@ -1,0 +1,85 @@
+.slider {
+  background-color: $violet;
+  margin-top: -388px;
+
+  @include tablet {
+    margin-top: -356px;
+  }
+
+  @include mobile {
+    margin-top: -184px;
+  }
+
+  &__container {
+    width: 68.8%;
+    height: 636px;
+    margin-left: auto;
+    margin-right: 0;
+
+    @include tablet {
+      width: 74%;
+      height: 604px;
+    }
+
+    @include mobile {
+      width: 74.5%;
+      height: 293px;
+      padding-left: 24.5%;
+    }
+  }
+
+  &__wrapper {
+    @include list-reset;
+    display: flex;
+  }
+
+  &__item {
+    max-height: 528px;
+    overflow: hidden;
+    opacity: 0.8;
+
+    @include tablet {
+      max-height: 496px;
+    }
+
+    @include mobile {
+      max-height: 232px;
+    }
+  }
+
+  img {
+    width: 100%;
+    // heightsx: 100%;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    width: 180px;
+    bottom: 44px;
+
+    @include mobile {
+      bottom: 21px;
+    }
+
+    .swiper-pagination-bullet {
+      margin: 0 24px 0 0;
+    }
+  }
+
+  .swiper-pagination-bullet {
+
+    width: 12px;
+    height: 12px;
+    border-radius: 0;
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+
+    transition: background-color $transition-props;
+
+    &-active {
+      background-color: rgba($color: #ffffff, $alpha: 1);
+    }
+
+    &:hover {
+      background-color: rgba($color: #ffffff, $alpha: 0.7);
+    }
+  }
+}

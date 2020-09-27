@@ -1,0 +1,46 @@
+.intro {
+  position: relative;
+  background-color: transparent;
+  color: $white;
+  z-index: 2;
+  // width: 80%;
+
+
+
+
+  h1 {
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 64px;
+
+    width: 80%;
+    margin: 0;
+    margin-bottom: 16px;
+
+    @include tablet {
+      width: 83%;
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    @include mobile {
+      width: 100%;
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+
+    width: 80%;
+    margin: 0;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+
+}

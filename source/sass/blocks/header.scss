@@ -1,0 +1,21 @@
+.header {
+  position: relative;
+  z-index: 10;
+
+  font-size: 16px;
+  line-height: 16px;
+
+  margin-bottom: 139px;
+
+  color: $white;
+  background-color: transparent;
+  border-bottom: 1px solid $white;
+
+  @include mobile {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 47px;
+
+    background-color: $violet;
+  }
+}

@@ -1,0 +1,46 @@
+@include mobile {
+  .opened-menu {
+    overflow: hidden;
+
+    .main-nav__burger {
+      display: none;
+    }
+
+    .main-nav__close-btn {
+      display: block;
+    }
+
+    .main-nav__list {
+      opacity: 1;
+    }
+  }
+
+  .closed-menu {
+    overflow: auto;
+
+    .main-nav__burger {
+      display: block;
+    }
+
+    .main-nav__close-btn {
+      display: none;
+    }
+
+    .main-nav__list {
+      opacity: 0;
+    }
+  }
+
+  .no-js {
+    .main-nav__burger {
+      display: none;
+    }
+
+    @include mobile {
+      .intro {
+        margin-top: 500px;
+      }
+    }
+  }
+}
+
