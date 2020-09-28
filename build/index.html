@@ -9,8 +9,9 @@
       <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body class="no-js">
+
       <header class="header">
-        <div class="header__wrapper container">
+        <div class="header__wrapper container-header">
           <nav class="header__nav main-nav">
             <a class="main-nav__logo"><img src="img/logo.svg" width="64" height="64" alt="Логотип компании"></a>
             <button class="main-nav__burger" type="button" aria-label="Открыть меню"></button>
@@ -26,8 +27,10 @@
           </nav>
         </div>
       </header>
+
       <main>
-        <section class="intro container-inner">
+
+        <section class="intro container">
 
           <h1>Многофункциональный жилой квартал HEADLINER</h1>
           <p>Сдача&nbsp;&mdash; 4&nbsp;кв.&nbsp;2022, есть сданные</p>
@@ -35,6 +38,7 @@
         </section>
 
         <section class="slider">
+
           <div class="slider__container swiper-container">
             <ul class="slider__wrapper swiper-wrapper">
               <li class="slider__item swiper-slide">
@@ -94,6 +98,162 @@
               </li>
             </ul>
             <div class="slider__pagination swiper-pagination"></div>
+          </div>
+
+        </section>
+
+        <!-- Возможная реализация - через табы -->
+        <section class="info">
+
+          <div class="info__container container">
+            <h2 class="visually-hidden">Информация о квартале Headliner</h2>
+            <ul class="info__links">
+              <li class="info__item info__item--active"><a class="info__link" href="#">Плюсы и минусы</a></li>
+              <li class="info__item"><a class="info__link" href="#">Аэротур</a></li>
+              <li class="info__item"><a class="info__link" href="#">Планировки</a></li>
+              <li class="info__item"><a class="info__link" href="#">Застройщик</a></li>
+            </ul>
+            <div class="info__description description">
+              <ul class="description__plus">
+                <li>Привлекательная архитектура</li>
+                <li>Большой выбор квартир</li>
+                <li>Поразительные виды из окон</li>
+                <li>Сложившийся район со всем необходимым</li>
+                <li>Сравнительно низкие цены</li>
+              </ul>
+              <ul class="description__minus">
+                <li>Недостаток собственной инфраструктуры</li>
+                <li>Частые пробки вокруг</li>
+                <li>Не лучшая экология</li>
+              </ul>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="registration section">
+          <div class="registration__container container">
+            <h2>Запишитесь на просмотр и оцените всё сами!</h2>
+            <a type="button">Запись на просмотр</a>
+          </div>
+        </section>
+
+        <section class="location section">
+
+          <div class="location__container container">
+            <h2>Локация</h2>
+            <p>Москва, ЦАО, Пресненский, Шмитовский проезд, вл. 39</p>
+            <ul class="location__metro subway">
+              <li class="subway__item">
+                <span class="subway__name">Шелепиха</span>
+                <span class="subway__time">5 мин пешком</span>
+              </li>
+              <li class="subway__item">
+                <span class="subway__name">Фили</span>
+                <span class="subway__time">6 мин на транспорте</span>
+              </li>
+            </ul>
+            <div class="location__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.28368682803!2d37.51711191642077!3d55.753574013800936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549610b35daa5%3A0xab7b78158ac4c3d8!2z0KjQvNC40YLQvtCy0YHQutC40Lkg0L_RgC3QtCwgMzksINCc0L7RgdC60LLQsCwgMTIzMjkw!5e0!3m2!1sru!2sru!4v1601218573940!5m2!1sru!2sru" width="100%" height="407" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <button><span>Объекты инфраструктуры</span></button>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="complex section">
+          <div class="complex__container container">
+            <h2>Смотрите также</h2>
+            <ul class="complex__list">
+              <li class="complex__item item">
+                <div class="item__top">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/gk-1@1x.webp 1x, img/gk-1@2x.webp 2x">
+                    <source type="image/webp" srcset="img/gk-1-mobile@1x.webp 1x, img/gk-1-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/gk-1@1x.jpg 1x, img/gk-1@2x.jpg 2x">
+                    <img src="img/gk-1-mobile@1x.jpg" srcset="img/gk-1-mobile@2x.jpg" width="342" height="236">
+                  </picture>
+                  <div class="item__general-info">
+                   <p>8 217 030 - 29 070 951₽</p>
+                   <p>569 квартир в продаже</p>
+                  </div>
+                </div>
+                <div class="item__bottom">
+                  <h3>ЖК «Level Стрешнево» (Левел Стрешнево)</h3>
+                  <p>Москва, СВАО</p>
+                  <div class="item__distance">
+                    <p>Алексеевская</p>
+                    <p>5 мин</p>
+                  </div>
+                </div>
+              </li>
+              <li class="complex__item">
+                <div class="item__top">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/gk-2@1x.webp 1x, img/gk-2@2x.webp 2x">
+                    <source type="image/webp" srcset="img/gk-2-mobile@1x.webp 1x, img/gk-2-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/gk-2@1x.jpg 1x, img/gk-2@2x.jpg 2x">
+                    <img src="img/gk-2-mobile@1x.jpg" srcset="img/gk-2-mobile@2x.jpg" width="342" height="236">
+                  </picture>
+                  <div div="" class="item__general-info">
+                    <p>8 217 030 - 29 070 951₽</p>
+                    <p>569 квартир в продаже</p>
+                  </div>
+                </div>
+                <div class="item__bottom">
+                  <h3>ЖК «Новое Медведково»</h3>
+                  <p>Москва, СВАО</p>
+                  <div class="item__distance">
+                    <p>Алексеевская</p>
+                    <p>5 мин</p>
+                  </div>
+                </div>
+              </li>
+              <li class="complex__item">
+                <div class="item__top">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/gk-3@1x.webp 1x, img/gk-3@2x.webp 2x">
+                    <source type="image/webp" srcset="img/gk-3-mobile@1x.webp 1x, img/gk-3-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/gk-3@1x.jpg 1x, img/gk-3@2x.jpg 2x">
+                    <img src="img/gk-3-mobile@1x.jpg" srcset="img/gk-3-mobile@2x.jpg" width="342" height="236">
+                  </picture>
+                  <div div="" class="item__general-info">
+                    <p>8 217 030 - 29 070 951₽</p>
+                    <p>569 квартир в продаже</p>
+                  </div>
+                </div>
+                <div class="item__bottom">
+                  <h3>ЖК «Люберецкий»</h3>
+                  <p>Москва, СВАО</p>
+                  <div class="item__distance">
+                    <p>Алексеевская</p>
+                    <p>5 мин</p>
+                  </div>
+                </div>
+              </li>
+              <li class="complex__item">
+                <div class="item__top">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/gk-4@1x.webp 1x, img/gk-4@2x.webp 2x">
+                    <source type="image/webp" srcset="img/gk-4-mobile@1x.webp 1x, img/gk-4-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/gk-4@1x.jpg 1x, img/gk-4@2x.jpg 2x">
+                    <img src="img/gk-4-mobile@1x.jpg" srcset="img/gk-4-mobile@2x.jpg" width="342" height="236">
+                  </picture>
+                  <div div="" class="item__general-info">
+                    <p>8 217 030 - 29 070 951₽</p>
+                    <p>569 квартир в продаже</p>
+                  </div>
+                </div>
+                <div class="item__bottom">
+                  <h3>ЖК «Измайловский лес»</h3>
+                  <p>Москва, СВАО</p>
+                  <div class="item__distance">
+                    <p>Алексеевская</p>
+                    <p>5 мин</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
       </main>

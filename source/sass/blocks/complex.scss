@@ -1,0 +1,161 @@
+.complex {
+  &__container {
+    padding-bottom: 54px;
+
+    @include tablet {
+      padding-bottom: 25px;
+    }
+
+    @include mobile {
+      padding-bottom: 8px;
+    }
+  }
+
+  &__list {
+    @include list-reset;
+    display: flex;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    width: 23.7%;
+    margin-right: 1.8%;
+
+    &:first-of-type {
+      @include mobile {
+        h3 {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include tablet {
+      width: 48.6%;
+      margin-right: 2.8%;
+      margin-bottom: 21px;
+
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+    }
+
+    @include mobile {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.item {
+  &__top {
+    position: relative;
+    margin-bottom: 16px;
+    overflow: hidden;
+
+    img {
+      transform: scale(1);
+      transition: transform $transition-props;
+
+      @include tablet {
+        width: 100%;
+      }
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  &__general-info {
+    position: absolute;
+    bottom: 12px;
+    font-size: 16px;
+    line-height: 16px;
+    color: $white;
+
+    p {
+      margin: 0 0 4px;
+      padding-left: 15px;
+
+      &:first-child {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__bottom {
+    h3 {
+      font-size: 20px;
+      line-height: 28px;
+
+      margin: 0 0 4px;
+
+      // @include mobile {
+      //   font-size: 16px;
+      //   line-height: 24px;
+      // }
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 16px;
+      margin: 0 0 2px;
+    }
+  }
+
+  &__distance {
+    display: flex;
+
+    font-size: 14px;
+    line-height: 16px;
+
+    p {
+      position: relative;
+      padding-left: 19px;
+
+
+      &:first-of-type {
+        &::before {
+          content: "";
+          position: absolute;
+          left: 2px;
+          top: 4px;
+          width: 8px;
+          height: 8px;
+
+          background-color: #fca82a;
+          border-radius: 50%;
+        }
+      }
+
+      &:last-of-type {
+        &::before {
+          content: "";
+          position: absolute;
+          left: 6px;
+          top: 3px;
+          width: 10px;
+          height: 11px;
+          background-image: url("../img/icon-pedestrian.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}

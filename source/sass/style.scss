@@ -8,6 +8,7 @@
 @import "./global/mixins.scss";
 @import "./global/container.scss";
 @import "./global/buttons.scss";
+@import "./global/section.scss";
 
 // BLOCKS
 @import "./blocks/body.scss";
@@ -15,4 +16,8 @@
 @import "./blocks/main-nav.scss";
 @import "./blocks/intro.scss";
 @import "./blocks/slider.scss";
+@import "./blocks/info.scss";
+@import "./blocks/registration.scss";
+@import "./blocks/location.scss";
+@import "./blocks/complex.scss";
 
